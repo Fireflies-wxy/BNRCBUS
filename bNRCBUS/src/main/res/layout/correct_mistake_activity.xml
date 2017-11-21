@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/adcontainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-3dp" >
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="实时信息纠错"
+                android:paddingBottom="2dip"
+                android:paddingLeft="15dip"
+                android:paddingTop="30dip"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:id="@+id/layout01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:orientation="vertical"
+                android:paddingTop="2dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_delay"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:background="@color/white"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="延迟到站"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_advance"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="提前到站"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_hasCar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="实际有车，显示无车"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_noCar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="显示有车，实际无车"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="线路信息纠错"
+                android:paddingBottom="2dip"
+                android:paddingLeft="15dip"
+                android:paddingTop="25dip"
+                android:textColor="@color/gray_light"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dip"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_wrongName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="站名有误"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_wrongStation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="少站或多站"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_wrongLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="线路已变更"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_cancelLine"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="线路取消或停运"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <RelativeLayout
+                    android:id="@+id/rLayout_wrongTime"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dp" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="50dip"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="15dip"
+                        android:text="首末班时间有误"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dip"
+                    android:background="@drawable/list_divider"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

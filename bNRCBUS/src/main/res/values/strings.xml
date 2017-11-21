@@ -1,0 +1,114 @@
+<resources>
+
+    <string name="app_name">等车来</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="userName">请输入用户名</string>
+    <string name="userPwd">请输入密码</string>
+    <string name="error_name">请输入用户名！</string>
+    <string name="error_pwd">请输入密码！</string>
+    <string name="down_image_name">异步下载图片</string>
+    <string name="pull_list_name">下拉刷新分页</string>
+    <string name="table_list_name">表格List</string>
+    <string name="slider_button_name">滑动按钮</string>
+    <string name="view_play_name">图片联播</string>
+    <string name="down_list">下载器</string>
+    <string name="welcome_name">欢迎页面</string>
+    <string name="level_name">等级条</string>
+    <string name="page_frame">Tab Menu框架</string>
+    <string name="wheel_name">轮子选择</string>
+    <string name="photo_add_name">拍照相册选择</string>
+    <string name="chart_name">图表</string>
+    <string name="chart_line">XY线图</string>
+    <string name="chart_bar">XY柱图</string>
+    <string name="chart_pie">饼图</string>
+    <string name="undownLoad_title">未下载</string>
+    <string name="download_complete_title">下载完成</string>
+    <string name="calendar_name">日历选择器</string>
+    <string name="okBtn">确定</string>
+    <string name="cancelBtn">取消</string>
+    <string name="see">查看</string>
+    <string name="about">关于</string>
+    <string name="version_lable">应用简介：</string>
+    <string name="copyright">版权所有  CopyRight 2014 bnrc</string>
+    <string name="about_desc">\t\t<p2>等车来  1.5</p2>     \n\n\t\t这是一款基于北京地区公交车信息的手机软件，本软件可以向用户提供到站提醒、每一路公交车运行轨迹以及沿途站点、用户附近的公交车站等信息。该软件提供的信息除了地图和提醒全是离线形式，大大节约了用户的数据流量。
+	\n\t\t1. 到站提醒功能的实现可以是用户在坐公交车时，通过上网、听音乐或者其他活动打发时间而且不用怕坐过站。
+	\n\t\t2.通过查看每一路公交车运行轨迹和沿途站点，可以让用户足不出户就掌握公交车信息。
+	\n\t\t3.当您到达一个陌生的地方或需要在换乘其他公交车时，此时用该软件您可以快速的了解到附近有哪些公交车站。
+	\n\t\t4.针对当用iPhone开启GPS定位时耗电量比较大这一特点，我们做了很好的优化，使得即能提供准确的到站提醒功能以及用户位置的定位，又能在开启定位功能时大大节省电量。
+	\n\t\t如果您平时上下班经常坐公交车，您应该装一款该软件，它能让你不再害怕坐过站；如果您经常来北京，您应该装一款该软件，为您来京提供很大便利。
+	\n\t\t如果您有什么建议，请联系我们。
+	\n\t\t注意：在后台运行的GPS可能会大大降低电池的使用寿命。
+	\n\t\t本软件的创新点之一就是通过对GPS定位进行优化达到省电目的，故请您正常使用即可。
+	 \n
+</string>
+    <string name="title_transparent_desc">                设置标题栏透明,
+                在启动Activity时添加参数：
+      intent.putExtra(
+         AbConstant.TITLE_TRANSPARENT_FLAG
+       , AbConstant.TITLE_TRANSPARENT);
+                同时布局使用ScrollView，
+                并向下偏移标题栏的高度
+                \n^\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|\n|
+                \n|\n|\n|\n|\n|\n|\n|\n|\n|
+</string>
+    <string name="date_picker">日期选择：</string>
+    <string name="time_picker">时间选择：</string>
+    <string name="data1_desc">选择：</string>
+    <string name="data1_unit">单位</string>
+
+    <drawable name="clr_normal">#00b2ae</drawable>
+    <drawable name="clr_pressed">#ff8330</drawable>
+
+    <string name="menuname">ActionBar下拉菜单</string>
+
+    <string-array name="function">
+        <item>邓名侨</item>
+        <item>刘天喜</item>
+        <item>其黄石</item>
+        <item>蔡宏远</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+    <!-- xiecheng -->
+
+    <string name="hello_world">Hello world!</string>
+    <string name="home">帐户登录</string>
+    <string name="login_page">附近</string>
+    <string name="traveldiary">关注</string>
+    <string name="voice">公交圈</string>
+    <string name="phoneus">设置</string>
+    <string name="title1">苹果在中国市场：Google的劣势反而是苹果的优势</string>
+    <string name="title2">吞噬大数据存储领域新机制——NoSQL模式解析</string>
+    <string name="title3">神舟九号：宇航员会携带什么移动应用上天？</string>
+    <string name="title4">2013苹果全球开发者大会（WWDC）12日开幕</string>
+    <string name="title5">Win8说：请把PC丢出窗外！</string>
+    <string name="normal_login">普通登录</string>
+    <string name="mobile_login">手机登录</string>
+    <string name="login_account">帐号</string>
+    <string name="title_vcode">验证码</string>
+    <string name="account_hint_normal">用户名/邮箱</string>
+    <string name="login_password">密码</string>
+    <string name="account_password">登录密码</string>
+    <string name="vcode_refresh">换一换</string>
+    <string name="back">返回</string>
+    <string name="refresh">刷新</string>
+    <string name="account_regedit">注册</string>
+    <string name="title_login">登录帐号</string>
+    <string name="help">帮助</string>
+    <string name="btnvoice">按住说话</string>
+    <string name="voicetip">核心技术由科大讯飞提供</string>
+    <string name="voice_text1">定酒店  试试说：</string>
+    <string name="voice_text2">"上海的酒店"</string>
+    <string name="voice_text3">"天安门"附件的酒店</string>
+    <string name="wait_station">候车：%s</string>
+    <string name="destination_station">开往：%s</string>
+    <string name="distance">距离：%s m</string>
+    <string name="startTime">首班车：%s</string>
+    <string name="endTime">末班车：%s</string>
+    <string name="localStation">%s</string>
+    <string name="firstBus">本趟车：%s</string>
+    <string name="secondBus">下趟车：%s</string>
+    <string name="loading">加载中...</string>
+
+</resources>

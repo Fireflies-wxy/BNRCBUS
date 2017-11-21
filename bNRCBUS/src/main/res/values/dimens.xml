@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- slidingmenu配置 -->
+    <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="shadow_width">16dp</dimen>
+    <dimen name="popmenu_width">100.0dip</dimen>
+    <dimen name="popmenu_yoff">5.0dip</dimen>
+    <dimen name="dip2pix">1.0dip</dimen>
+    <dimen name="radio_button_conner_radius">5dp</dimen>
+    <dimen name="radio_button_stroke_border">1dp</dimen>
+</resources>

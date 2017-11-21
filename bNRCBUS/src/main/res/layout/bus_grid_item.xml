@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:alpha="0.85"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_waitStation"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:background="@drawable/root_button_selector"
+        android:ellipsize="marquee"
+        android:gravity="center"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:paddingBottom="9dp"
+        android:paddingTop="9dp"
+        android:singleLine="true"
+        android:textSize="17dp"
+        android:textColor="@android:color/white" />
+    <ImageView
+        android:id="@+id/iv_special"
+        android:layout_marginTop="2dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:visibility="invisible"
+        android:src="@drawable/favimgbg" />
+
+</FrameLayout>

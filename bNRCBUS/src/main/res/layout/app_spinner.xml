@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/line1"
+        android:layout_width="1dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line"
+        android:scaleType="fitCenter" 
+        android:layout_gravity="center_vertical"/>
+
+    <Spinner   
+        android:id="@+id/spinner"  
+        android:layout_width="wrap_content"  
+        android:layout_height="48dp"  
+        android:entries="@array/function"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:background="@color/transparent" /> 
+
+
+</LinearLayout>

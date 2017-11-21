@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RotateView">
+        <attr name="pointX" format="integer" />
+        <attr name="pointY" format="integer" />
+        <attr name="radius" format="integer" />
+        <attr name="layout_center" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="PlayView">
+        <attr name="displayDrawable" format="reference|color" />
+        <attr name="hideDrawable" format="reference|color" />
+        <attr name="viewCount" format="integer" />
+        <attr name="progressPoint" format="reference|color" />
+        <attr name="progressBar" format="reference|color" />
+        <attr name="progressBg" format="reference|color" />
+        <attr name="offsetTop" format="integer" />
+        <attr name="background" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="com.baidu.mobads.AdView">
+        <attr name="adSize" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SegmentedGroup">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="tint_color" format="color" />
+        <attr name="checked_text_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="HorizontalListViewOK">
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:listSelector" />
+    </declare-styleable>
+    <declare-styleable name="RotateLoading">
+        <attr name="loadingWidth" format="dimension" />
+        <attr name="loadingColor" format="color" />
+        <attr name="shadowPosition" format="integer" />
+    </declare-styleable>
+<!--     <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable> -->
+
+</resources>

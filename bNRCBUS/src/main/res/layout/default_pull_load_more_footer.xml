@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <com.bnrc.ui.subview.RotateLoading
+        android:id="@+id/footer_loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        app:loadingColor="#14b056"
+        app:loadingWidth="4dp"
+        />
+
+    <TextView
+        android:id="@+id/footer_to_load"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点击加载更多..."
+        android:textColor="#555555"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

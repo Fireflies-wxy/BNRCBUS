@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp" >
+
+    <TextView
+        android:id="@+id/mTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:background="#eeeeee"
+        android:hint="以下是该线路上的站点及车辆信息..."
+        android:paddingBottom="3dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="6dp"
+        android:singleLine="true"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@drawable/list_divider"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <HorizontalScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/ic_3_bg_building"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="horizontal"
+        android:visibility="gone" >
+
+        <FrameLayout
+            android:id="@+id/busList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/stationList"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </FrameLayout>
+    </HorizontalScrollView>
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+</LinearLayout>

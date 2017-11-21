@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BNRCBUS.iml" filepath="$PROJECT_DIR$/BNRCBUS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bNRCBUS/bNRCBUS.iml" filepath="$PROJECT_DIR$/bNRCBUS/bNRCBUS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_zhy_progressbar/library_zhy_progressbar.iml" filepath="$PROJECT_DIR$/library_zhy_progressbar/library_zhy_progressbar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myAndroidTest_93_IOSDialog/myAndroidTest_93_IOSDialog.iml" filepath="$PROJECT_DIR$/myAndroidTest_93_IOSDialog/myAndroidTest_93_IOSDialog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xAlertDialogLibrary/xAlertDialogLibrary.iml" filepath="$PROJECT_DIR$/xAlertDialogLibrary/xAlertDialogLibrary.iml" />
+    </modules>
+  </component>
+</project>

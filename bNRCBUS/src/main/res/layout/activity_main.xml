@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background" >
+
+    <ViewFlipper
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/radio_group" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radio_near"
+            style="@style/main_tab_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/tabs_traveldiary"
+            android:text="@string/login_page" />
+
+        <RadioButton
+            android:id="@+id/radio_concern"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tabs_login"
+            android:text="@string/traveldiary" />
+
+        <RadioButton
+            android:id="@+id/radio_buscircle"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tabs_voice"
+            android:text="@string/voice" />
+
+        <RadioButton
+            android:id="@+id/radio_setting"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/tabs_help"
+            android:text="@string/phoneus" />
+    </RadioGroup>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_above="@id/radio_group"
+        android:background="#00BB9C" />
+
+</RelativeLayout>

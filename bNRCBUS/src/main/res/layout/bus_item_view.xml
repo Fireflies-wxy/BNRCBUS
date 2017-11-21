@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:alpha="0.85"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:padding="1dp" >
+
+    <LinearLayout
+        android:id="@+id/itemsContainer2"
+        android:layout_width="5dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="0dip"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/itemsContainer"
+        android:layout_width="110dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="0dip"
+        android:background="#ff0033"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_buslineName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1.5"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="6dp"
+            android:singleLine="true"
+  
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/station_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+
+            android:singleLine="true"
+
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_marginLeft="0dip"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="0dip"
+        android:background="#00b2ae"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_waitStation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/root_button_selector"
+            android:ellipsize="end"
+            android:paddingBottom="6dp"
+            android:paddingLeft="5dp"
+            android:paddingTop="8dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/root_button_selector"
+            android:ellipsize="end"
+            android:paddingBottom="8dp"
+            android:paddingLeft="5dp"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

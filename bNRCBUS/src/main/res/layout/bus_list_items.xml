@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/buslineIcon"
+            android:layout_width="20.5dp"
+            android:layout_height="49dp"
+            android:layout_gravity="top"
+            android:layout_marginLeft="28dip"
+            android:layout_marginRight="0dip"
+            android:layout_marginTop="0dip"
+            android:background="@drawable/buslineiconnormal"
+            android:padding="0dip"
+            android:scaleType="fitXY" />
+
+        <View
+            android:id="@+id/buslineIconhr"
+            android:layout_width="42dp"
+            android:layout_height="2dip"
+            android:layout_marginTop="23.5dp"
+            android:layout_toRightOf="@+id/buslineIcon"
+            android:alpha="0.65"
+            android:background="#00b2ae" />
+
+        <FrameLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dip"
+            android:layout_marginTop="0dip"
+            android:layout_toRightOf="@+id/buslineIconhr"
+            android:background="@color/transparent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/itemsContainer"
+                android:layout_width="160dp"
+                android:layout_height="44dp"
+                android:layout_marginLeft="0dip"
+                android:layout_marginTop="5dip"
+                android:layout_toRightOf="@+id/buslineIconhr"
+                android:alpha="0.65"
+                android:background="#00b2ae"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_stationName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingBottom="8.5dp"
+                    android:paddingLeft="15dip"
+                    android:paddingTop="8.5dp"
+                    android:text="123"
+                    android:textColor="@color/white"
+                    android:textSize="16dip" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_special"
+                android:layout_width="30dp"
+                android:layout_height="22dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="27dp"
+                android:alpha="0.75"
+                android:src="@drawable/favimgbg2"
+                android:visibility="visible" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="right"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="42dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dip"
+            android:background="@color/transparent"
+            android:gravity="top|center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_onRoadBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:layout_marginLeft="12dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="0dip"
+                android:padding="0dip" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

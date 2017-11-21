@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+     >
+
+    <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:background="@android:color/transparent">
+            
+            <Button
+            android:id="@+id/stationImg"
+            android:layout_width="125dp"
+            android:layout_marginTop="40dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="15dp"
+    		android:layout_marginRight="15dp"
+    		android:theme="@android:style/Theme.Translucent"
+            android:background="@drawable/ic_3_stop_target" 
+            />
+            <TextView
+                android:layout_marginTop="50dp"
+                android:id="@+id/tv_waitStation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" 
+                android:ellipsize="end"
+                android:theme="@android:style/Theme.Translucent"
+                android:layout_marginLeft="15dp"
+    			android:layout_marginRight="15dp"
+                android:textSize="16sp"
+                android:textStyle="bold" 
+                android:textColor="@color/black" />
+     </FrameLayout>
+
+
+</LinearLayout>

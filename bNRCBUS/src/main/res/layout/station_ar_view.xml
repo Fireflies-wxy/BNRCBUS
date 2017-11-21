@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp" >
+
+   <com.baidu.lbsapi.panoramaview.PanoramaView  
+    android:id="@+id/panorama"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:clickable="true" />
+
+    <TextView
+        android:id="@+id/mTitleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:background="#eeeeee"
+        android:hint="点击某站点可单独查看其实际方位"
+        android:paddingLeft="6dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="2dp"
+        android:singleLine="true"
+        android:textSize="14sp" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:clickable="true" />
+
+</LinearLayout>

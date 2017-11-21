@@ -1,0 +1,25 @@
+<com.bnrc.ui.login.DragLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/DLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/icon_background"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <!-- 左侧菜单页面 -->
+
+    <include layout="@layout/activity_leftmenu" />
+
+    <com.bnrc.ui.login.MyRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eeeeee"
+        android:orientation="vertical" >
+
+        <!-- headbanner -->
+
+        <include layout="@layout/activity_rjz_main" />
+    </com.bnrc.ui.login.MyRelativeLayout>
+
+</com.bnrc.ui.login.DragLayout>
