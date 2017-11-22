@@ -22,6 +22,7 @@ import com.ab.fragment.AbAlertDialogFragment.AbDialogOnClickListener;
 import com.ab.util.AbDialogUtil;
 import com.ab.view.progress.AbHorizontalProgressBar;
 import com.bnrc.activity.AboutActivity;
+import com.bnrc.busapp.ArActivity;
 import com.bnrc.busapp.BusCircleActivity;
 import com.bnrc.busapp.PollingService;
 import com.bnrc.busapp.PollingUtils;
@@ -146,7 +147,7 @@ public class MainActivity extends BaseActivity implements IPopWindowListener,
 	private Map<String, Child> mChildList;
 	private Child child;
 	private SelectPicPopupWindow menuWindow;
-	private RelativeLayout mMenuBuscircle, mMenuTransfer, mMenuAr, mMenuSetting,
+	private RelativeLayout mMenuBuscircle, mMenuTransfer, mMenuSetting, mMenuAr,
 			mMenuShare, mMenuAdvice, mMenuAbout;
 	private BaseFragment mFragment;
 	private double dbVersion, appVersion;
@@ -210,13 +211,14 @@ public class MainActivity extends BaseActivity implements IPopWindowListener,
 
 		mMenuBuscircle = (RelativeLayout) findViewById(R.id.menu_buscircle);
 		mMenuTransfer = (RelativeLayout) findViewById(R.id.menu_transfer);
-		//mMenuAr = (RelativeLayout) findViewById(R.id.menu_ar);
+		mMenuAr = (RelativeLayout) findViewById(R.id.menu_ar);
 		mMenuSetting = (RelativeLayout) findViewById(R.id.menu_setting);
 		mMenuShare = (RelativeLayout) findViewById(R.id.menu_share);
 		mMenuAdvice = (RelativeLayout) findViewById(R.id.menu_advice);
 		mMenuAbout = (RelativeLayout) findViewById(R.id.menu_about);
 		mMenuBuscircle.setOnClickListener(this);
 		mMenuTransfer.setOnClickListener(this);
+		mMenuAr.setOnClickListener(this);
 		mMenuSetting.setOnClickListener(this);
 		mMenuShare.setOnClickListener(this);
 		mMenuAdvice.setOnClickListener(this);
@@ -250,11 +252,12 @@ public class MainActivity extends BaseActivity implements IPopWindowListener,
 					SubWayActivity.class);
 			startActivity(subwayIntent);
 			break;
-//        case R.id.menu_ar:
-//            Intent arIntent = new Intent(MainActivity.this,
-//                    ArActivity.class);
-//            startActivity(arIntent);
-//            break;
+        case R.id.menu_ar:
+        	Toast.makeText(MainActivity.this, "You clicked menu_ar", Toast.LENGTH_SHORT).show();
+            Intent arIntent = new Intent(MainActivity.this,
+                    ArActivity.class);
+            startActivity(arIntent);
+            break;
 		case R.id.menu_setting:
 			Intent settingInt = new Intent(MainActivity.this, SettingView.class);
 			startActivity(settingInt);

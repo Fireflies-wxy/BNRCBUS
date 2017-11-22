@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.bnrc.busapp"
     android:versionCode="0"
-    android:versionName="1.6" >
+    android:versionName="1.6">
 
     <uses-sdk
         android:minSdkVersion="12"
@@ -52,32 +52,24 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <!-- zj的权限 -->
     <!-- 这个权限用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
 
     <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
     <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
-    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
     <!-- 用于读取手机当前的状态 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
     <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
     <!-- 访问网络，网络定位需要上网 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- SD卡读取权限，用户写入离线定位数据 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
     <!-- 允许应用读取低级别的系统日志文件 -->
-    <uses-permission android:name="android.permission.READ_LOGS" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.READ_LOGS"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -95,19 +87,13 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <!-- QQ、QQ空间所需权限 -->
     <uses-permission android:name="android.permission.GET_TASKS" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.INTERNET" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.INTERNET" >
-    </uses-permission>
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
-    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
     <!-- 多盟广告必须申明的权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -137,229 +123,202 @@
         android:value="b0cc95d95b40365f1d24792b8119d94f" />
 
     <application
-        tools:replace="android:icon,android:theme"
         android:name="com.bnrc.util.LocationUtil"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/myTheme" >
+        android:theme="@style/myTheme"
+        tools:replace="android:icon,android:theme">
         <meta-data
             android:name="UMENG_APPKEY"
-            android:value="5565792b67e58ecae80017d3" >
-        </meta-data>
+            android:value="5565792b67e58ecae80017d3"></meta-data>
         <meta-data
             android:name="UMENG_CHANNEL"
             android:value="baidushoujizhushou" />
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
             android:value="bSzKSyFy5ybYPQBP6Za0hPIs7uXgG9Ny" />
-            <!--android:value="Ial02Wmap53aMO4ofm8OwKCbM5zO2yDZ" />-->
-
+        <!-- android:value="Ial02Wmap53aMO4ofm8OwKCbM5zO2yDZ" /> -->
 
         <activity
             android:name="cn.domob.android.ads.DomobActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent"></activity>
         <activity
-            android:name="com.bnrc.busapp.RootView"
+            android:name=".RootView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.NewRootView"
+            android:name=".NewRootView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.StationInformationView"
+            android:name=".StationInformationView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.SearchSomethingView"
+            android:name=".SearchSomethingView"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.SplashScreen"
-            android:label="@string/app_name"
+            android:name=".SplashScreen"
             android:configChanges="keyboardHidden|orientation"
+            android:label="@string/app_name"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
+            android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.bnrc.busapp.SearchStationView"
+            android:name=".SearchStationView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.StationListView"
+            android:name=".StationListView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.MyAlertStationView"
+            android:name=".MyAlertStationView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.AlertBuslineActivity"
+            android:name=".AlertBuslineActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.UserSettingView"
+            android:name=".UserSettingView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.MyFavoriteStationView"
+            android:name=".MyFavoriteStationView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.MyFavoriteBuslineView"
+            android:name=".MyFavoriteBuslineView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.SearchBuslineView"
+            android:name=".SearchBuslineView"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.bnrc.busapp.CorrectMistakeActivity"
+            android:name=".CorrectMistakeActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.SubWayActivity"
+            android:name=".SubWayActivity"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity android:name=".ArActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            ></activity>
         <activity
-            android:name="com.bnrc.busapp.UploadMistakeActivity"
+            android:name=".UploadMistakeActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.BuslineListView"
+            android:name=".BuslineListView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.BuslineListViewParallel"
+            android:name=".BuslineListViewParallel"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.BusCircleActivity"
+            android:name=".BusCircleActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.BuslineMapView"
+            android:name=".BuslineMapView"
             android:configChanges="keyboardHidden|orientation"
             android:launchMode="singleTop"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.SettingView"
+            android:name=".SettingView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
             android:name="com.bnrc.multipallist.MultiActivity"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
+            android:windowSoftInputMode="stateHidden">
 
             <!-- android:theme="@style/dialog" -->
 
         </activity>
         <activity
-            android:name="com.bnrc.busapp.WXEntryActivity"
+            android:name=".WXEntryActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
         <activity
-            android:name="com.bnrc.busapp.StationARView"
+            android:name=".StationARView"
             android:configChanges="keyboardHidden|orientation"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden" >
-        </activity>
+            android:windowSoftInputMode="stateHidden"></activity>
         <activity
-            android:name="com.bnrc.busapp.NearbyStationListView"
+            android:name=".NearbyStationListView"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.bnrc.busapp.AlertSelectListView"
+            android:name=".AlertSelectListView"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.bnrc.activity.AboutActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
-            android:name="com.bnrc.busapp.StationRoutView"
+            android:name=".StationRoutView"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.bnrc.ui.MainActivityOfXiecheng"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.bnrc.ui.rjz.MainActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.bnrc.ui.BuscircleActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.bnrc.ui.NearActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.bnrc.ui.ConcernActivity"
             android:configChanges="keyboardHidden|orientation"
-            android:screenOrientation="portrait" >
-        </activity>
+            android:screenOrientation="portrait"></activity>
         <activity
             android:name="com.umeng.socialize.view.ShareActivity"
             android:configChanges="orientation|keyboard"
@@ -367,14 +326,13 @@
             android:noHistory="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.UMDialog"
-            android:windowSoftInputMode="stateVisible|adjustResize" >
-        </activity>
+            android:windowSoftInputMode="stateVisible|adjustResize"></activity>
 
         <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
         <activity
             android:name="com.tencent.tauth.AuthActivity"
             android:launchMode="singleTask"
-            android:noHistory="true" >
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 
@@ -391,44 +349,38 @@
         <activity
             android:name="com.tencent.connect.common.AssistActivity"
             android:screenOrientation="portrait"
-            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        </activity>
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"></activity>
         <activity
             android:name="com.bnrc.util.collectwifi.MyDialogSelectBuslineActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait"
-            android:theme="@style/dialog" >
-        </activity>
+            android:theme="@style/dialog"></activity>
 
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
-            android:process=":remote" >
-        </service>
+            android:process=":remote"></service>
         <service
             android:name="com.bnrc.util.LocationDetectService"
             android:enabled="true"
-            android:process=":remote" >
-        </service>
-             <service android:name="com.bnrc.util.collectwifi.ScanService" >
-            <intent-filter android:priority="1000" >
+            android:process=":remote"></service>
+        <service android:name="com.bnrc.util.collectwifi.ScanService">
+            <intent-filter android:priority="1000">
                 <action android:name="com.bnrc.busapp.scanservice" />
             </intent-filter>
         </service>
-
-
-        <service android:name="com.bnrc.ui.rjz.ScanWifiService" >
-            <intent-filter android:priority="1000" >
+        <service android:name="com.bnrc.ui.rjz.ScanWifiService">
+            <intent-filter android:priority="1000">
                 <action android:name="com.bnrc.busapp.ScanWifiService" />
             </intent-filter>
         </service>
-        <service android:name="com.bnrc.ui.rjz.AlertService" >
+        <service android:name="com.bnrc.ui.rjz.AlertService">
             <intent-filter>
                 <action android:name="com.bnrc.ui.rjz.AlertService" />
             </intent-filter>
         </service>
 
-        <receiver android:name="com.bnrc.widget.MyWidget" >
+        <receiver android:name="com.bnrc.widget.MyWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
                 <action android:name="com.skywang.widget.UPDATE_ALL" />
@@ -442,13 +394,14 @@
         <service
             android:name="com.bnrc.widget.MyWidgetService"
             android:exported="false"
-            android:permission="android.permission.BIND_REMOTEVIEWS" >
-        </service>
-        <service android:name="com.bnrc.widget.ExampleAppWidgetService" >
+            android:permission="android.permission.BIND_REMOTEVIEWS"></service>
+        <service android:name="com.bnrc.widget.ExampleAppWidgetService">
             <intent-filter>
                 <action android:name="android.appwidget.action.EXAMPLE_APP_WIDGET_SERVICE" />
             </intent-filter>
         </service>
+
+
     </application>
 
 </manifest>
