@@ -3,8 +3,13 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/picture"
+    <com.bnrc.util.CameraSurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.bnrc.util.BusTags
+        android:id="@+id/busTags"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"/>
